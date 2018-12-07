@@ -1,0 +1,19 @@
+---
+- name: Connect to cluster using kubectl
+  shell: "az aks get-credentials --resource-group ansible_aks --name ansible-cluster --overwrite-existing"
+- name: checking nodes deployed
+  shell: " kubectl get node"
+  register: shell_result
+
+- debug:
+       var: shell_result.stdout_lines
+
+- name: app deployment
+  shell: "kubectl apply -f /home/devops/ansible-aks-demo/Ansible_infra/ANSIBLE_POC/roles/App_deployment/tasks/deploy.yaml"  
+
+- name: Connect to cluster using kubectl
+  shell: " kubectl get pods"
+  register: shell_result
+- debug:
+       var: shell_result.stdout_lines
+

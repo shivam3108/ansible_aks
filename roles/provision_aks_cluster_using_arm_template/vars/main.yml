@@ -1,0 +1,5 @@
+---
+path_to_ARM_template: /home/devops/ansible-aks-demo/Ansible_infra/ANSIBLE_POC/template_location/template.json
+
+path_to_parameter_template: /home/devops/ansible-aks-demo/Ansible_infra/ANSIBLE_POC/template_location/parameters.json
+

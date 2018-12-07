@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "ansible-cluster"
+        },
+        "location": {
+            "value": "South India"
+        },
+        "dnsPrefix": {
+            "value": "ansible-dns"
+        },
+        "agentCount": {
+            "value": 1
+        },
+        "agentVMSize": {
+            "value": "Standard_DS2_v2"
+        },
+        "servicePrincipalClientId": {
+            "value": "c030cede-ed7d-4644-8e29-70859af06ba5" 
+        },
+        "servicePrincipalClientSecret": {
+            "value": "mtvT)xCV:RBbf]6>!Wf32"
+        },
+        "kubernetesVersion": {
+            "value": "1.11.5"
+        },
+        "workspaceName": {
+            "value": "DefaultWorkspace-a6c9c679-ff36-4b35-a002-5f64c311ebdb-EUS"
+        },
+        "omsWorkspaceId": {
+            "value": "/subscriptions/a6c9c679-ff36-4b35-a002-5f64c311ebdb/resourcegroups/defaultresourcegroup-eus/providers/microsoft.operationalinsights/workspaces/defaultworkspace-a6c9c679-ff36-4b35-a002-5f64c311ebdb-eus"
+        },
+        "workspaceRegion": {
+            "value": "eastus"
+        },
+        "enableHttpApplicationRouting": {
+            "value": false
+        },
+        "networkPlugin": {
+            "value": "kubenet"
+        },
+        "enableRBAC": {
+            "value": false
+        }
+    }
+}

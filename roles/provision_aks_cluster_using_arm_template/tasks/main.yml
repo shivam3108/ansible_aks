@@ -1,0 +1,8 @@
+---
+ - name: Deploy a Vm using ARM template
+   shell: "
+          az group deployment create
+    --name Deploy_VM_SSH
+    --resource-group ansible_aks
+    --template-file {{path_to_ARM_template}}
+    --parameters {{path_to_parameter_template}}"

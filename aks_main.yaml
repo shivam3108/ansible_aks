@@ -1,0 +1,13 @@
+---
+- name: Cluster creation Provisioning
+  hosts: localhost
+  connection: local
+  tasks:
+     - include_role:
+          name: provision_VM_using_ARM_template
+- name: Application Deployment 
+  hosts: localhost
+  connection: local
+  tasks:
+     - include_role:
+           name: App_deployment     
